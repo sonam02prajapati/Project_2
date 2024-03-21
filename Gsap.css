@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans-serif";
+}
+.containers{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left-container{
+    background-color:#A5171E;
+    width: 30vw;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-container{
+    position: relative;
+    background-color: #fff;
+    width: 70vw;
+    height: 100%;
+}
+.center-container{
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    background-image: url(https://media.istockphoto.com/id/932289810/photo/beautiful-curle-hair-female-in-red-with-red-lips-and-dress-manicure-beauty-rose-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=cvi2mbaRagGONXsBvOw1kFWZnnmmfGQGzYRnFWu7jvg=);
+    background-size: cover;
+    top: 25vh;
+    left: 15vw;
+    box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+}
+.Logo{
+    padding: 3rem;
+    font-size: 2vw;
+}
+.info{
+    display: flex;
+    padding: 3rem;
+    font-size: 1.4vw;
+}
+.info a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #fff;
+}
+.story{
+    position: absolute;
+    height: 40%;
+    left: 30vw;
+    top: 30vh;
+}
+.story h1{
+    font-size: 5vw;
+    margin-bottom: 2rem;
+}
+.story p{
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    padding-right: 2rem;
+}
+.story p:nth-child(3){
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.menu-container{
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    top: 3rem;
+    right: 4rem;
+}
+
+
+.social-container{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+.social{
+    display: flex;
+}
+.social li{
+    list-style-type: none;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+.first-block{
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    background-color: hsl(359, 78%, 36%);
+    left: 0;
+    animation: overlay-left 4s cubic-bezier(0.074, 0.06, 0.4, 0.92)forwards;
+}
+@keyframes overlay-left{
+    0%{
+        left: 0;
+        width: 0%;
+    }
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+img{
+    width: 35px;
+    height: 30px;
+    bottom-right: 50%;
+}
